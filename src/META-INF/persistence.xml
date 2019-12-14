@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Parqueadero" transaction-type="RESOURCE_LOCAL">
+		<class>DAO.Accesocaja</class>
+		<class>DAO.AccesocajaPK</class>
+		<class>DAO.Caja</class>
+		<class>DAO.Cliente</class>
+		<class>DAO.Ingreso</class>
+		<class>DAO.Ingresonormal</class>
+		<class>DAO.Ingresotarjeta</class>
+		<class>DAO.Pago</class>
+		<class>DAO.Pagomensual</class>
+		<class>DAO.Pagoservicio</class>
+		<class>DAO.Rol</class>
+		<class>DAO.Tarifa</class>
+		<class>DAO.Tarjeta</class>
+		<class>DAO.Tipocliente</class>
+		<class>DAO.Tipotarifa</class>
+		<class>DAO.Tipovehiculo</class>
+		<class>DAO.Usuario</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/parqueadero"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
